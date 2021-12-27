@@ -36,18 +36,42 @@
     <div class="login">
       <div class="login-box">
         <h2>Order Now</h2>
-        <form autocomplete="off">
+        <form autocomplete="off" onsubmit="location.href = 'success.html';">
           <div>
-            <input type="text" name="name" id="" placeholder="Full Name" />
+            <input
+              type="text"
+              name="name"
+              id=""
+              placeholder="Full Name"
+              required
+            />
           </div>
           <div>
-            <input type="email" name="email" id="" placeholder="Email" />
+            <input
+              type="email"
+              name="email"
+              id=""
+              placeholder="Email"
+              required
+            />
           </div>
           <div>
-            <input type="phone" name="text" id="" placeholder="Phone No" />
+            <input
+              type="phone"
+              name="text"
+              id=""
+              placeholder="Phone No"
+              required
+            />
           </div>
           <div>
-            <input type="number" name="quantity" id="" placeholder="Quantity" />
+            <input
+              type="number"
+              name="quantity"
+              id=""
+              placeholder="Quantity"
+              required
+            />
           </div>
           <div>
             <textarea
@@ -56,6 +80,7 @@
               cols="30"
               rows="3"
               placeholder="Address"
+              required
             ></textarea>
           </div>
           <div>
