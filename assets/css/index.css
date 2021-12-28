@@ -112,6 +112,19 @@ h6 {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .landing {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .landing h2 {
+    font-size: 2rem;
+    max-width: 200px;
+  }
+}
+
 .trending {
   padding: 4rem 0;
 }
@@ -157,6 +170,40 @@ h6 {
 
 .trending .trending-item .buy-btn-box .btn {
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .trending .items {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .trending .items {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .trending .trending-item img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+  .trending .items {
+    justify-items: normal;
+  }
+  .trending .trending-item img {
+    width: 100px;
+    height: 100px;
+  }
+  .btn {
+    font-size: 14px !important;
+  }
 }
 
 button {

@@ -38,3 +38,15 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .landing {
+    grid-template-columns: 1fr;
+    align-content: center;
+  }
+
+  .landing h2 {
+    font-size: 2rem;
+    max-width: 200px;
+  }
+}
