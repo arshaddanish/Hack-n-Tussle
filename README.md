@@ -1,1 +1,1 @@
-Prototype of eCommerce for surgical products.
+Prototype of E-commerce for surgical products.
